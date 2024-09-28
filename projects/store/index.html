@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Store</title>
+</head>
+<body>
+    <p class="logo">Cake House</p>
+    <div class="cont">
+        <div class="field">
+            <p class="imp">Имя:</p>
+        </div>
+        <div>
+            <input id="name" type="text" size="40">
+        </div>
+    </div>
+    <div class="cont">
+        <div class="field">
+            <p class="imp">Фамилия:</p>
+        </div>
+        <div>
+            <input id="surname" type="text" size="40">
+        </div>
+    </div>
+    <p class="intro">Выберите торты и их количество:</p>
+    <div class="variants">
+        <div class="cake">
+            <div>
+                <img class="img" src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=3150&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Шоколадный торт">
+            </div>
+            <p><input type="checkbox" onclick="plusOne(0)" id="data_type" value="1000"><span class="imp">Шоколадный торт</span> - 1000 руб<input type="number" id="data_quality" disabled value="0"></p>
+        </div>
+        <div class="cake">
+            <img class="img" src="https://images.unsplash.com/photo-1713274787530-5955bded42a4?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Торт &quotНаполеон&quot">
+            <p><input type="checkbox" onclick="plusOne(1)" id="data_type" value="1500"><span class="imp">Торт "Наполеон"</span> - 1500 руб<input type="number" id="data_quality" disabled value="0"></p>
+        </div>
+        <div class="cake">
+            <img class="img" src="https://images.unsplash.com/photo-1605138693981-6c8a5ea87796?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Медовик">
+            <p><input type="checkbox" onclick="plusOne(2)" id="data_type" value="900"><span class="imp">Медовик</span> - 900 руб<input type="number" id="data_quality" disabled value="0"></p>
+        </div>
+        <div class="cake">
+            <img class="img" src="https://images.unsplash.com/photo-1614898105491-03fd5434c5cc?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Фруктовый торт">
+            <p><input type="checkbox" onclick="plusOne(3)" id="data_type" value="1300"><span class="imp">Фруктовый торт</span> - 1300 руб<input type="number" id="data_quality" disabled value="0"></p>
+        </div>
+        <div class="cake">
+            <img class="img" src="https://images.unsplash.com/photo-1461009312844-e80697a81cc7?q=80&w=3188&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Торт &quotБрауни&quot">
+            <p><input type="checkbox" onclick="plusOne(4)" id="data_type" value="180"><span class="imp">Торт "Брауни"</span> - 1600 руб<input type="number" id="data_quality" disabled value="0"></p>
+        </div>
+    </div>
+    <div class="result">
+        <p class="imp big">Итого:&nbsp;</p>
+        <p class="big" id="cost">0 руб</p>
+    </div>
+    <button onclick="order()">Оформить заказ</button>
+    <script src="script.js"></script>
+</body>
+</html>

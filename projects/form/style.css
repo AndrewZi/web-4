@@ -1,0 +1,12 @@
+.cont {
+    display: flex;
+    align-items: center
+}
+
+.field {
+    width: 100px;
+}
+
+.imp {
+    font-weight: 700;
+}

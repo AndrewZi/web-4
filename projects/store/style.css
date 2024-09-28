@@ -1,0 +1,53 @@
+.cont {
+    display: flex;
+    align-items: center
+}
+
+.field {
+    width: 100px;
+}
+
+.logo {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.imp {
+    font-weight: 700;
+}
+
+.variants {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.img {
+    width: 300px;
+    height: auto;
+}
+
+.cake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 5px
+}
+
+input[type="number"] {
+    margin: 0px 10px;
+    width: 50px
+}
+
+.big {
+    font-size: 25px;
+}
+
+.result {
+    display: flex;
+}
+
+button {
+    font-size: 25px;
+}
